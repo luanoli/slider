@@ -1,43 +1,52 @@
 .slider-content{      
-  height: 300px;
+  height: 320px;
   vertical-align: middle;
   background: white;
   border: 1px solid #c3c3c3;      
 }
 
+#slider-vitrine {
+  max-height: 320px;
+  overflow: hidden;
+}
+
 .slider-control {
-    height: 100%;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    width: 10%;
-    z-index: 1;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 10%;
+  z-index: 1;
+}
+
+.slider-control:hover img {
+  opacity: 1; 
 }
 
 .slider-control.slider-left-control {
-    left: 0;
+  left: -10px;
 }
 
 .slider-control.slider-right-control {
-    right: 0;
+  right: -8px;
 }
 
 .slider-control .slider-left-arrow {
-    left: 0;
-    height: 60%;
-    margin-top: -150%;
-    opacity: 0.3;
-    position: absolute;
-    top: 50%;
+  left: 0;
+  height: 60%;
+  margin-top: -150%;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
 }
 
 .slider-control .slider-right-arrow {
-    right: 0;
-    height: 60%;
-    margin-top: -150%;
-    opacity: 0.3;
-    position: absolute;
-    top: 50%;
+  right: 0;
+  height: 60%;
+  margin-top: -150%;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
 }
 
 .inactive {
@@ -45,8 +54,9 @@
 }
 
 .product-slide {
-  height: 300px;  
+  height: 320px;  
   padding: 15px;
+  z-index: 2;
 }
 
 .product-slide:hover {
@@ -54,18 +64,16 @@
 }
 
 .product-slide:hover img {
-  border: 2px solid #DDDDDD;
+  opacity: 0.7;
 }
 
-#slider-vitrine {
+.slider-set {
   position: relative;
-  overflow: hidden;
-  padding-left: 50px;
-  height: 300px;
-  padding-right: 50px;
+  overflow: hidden;  
+  height: 320px;   
 }
 
-#slider-vitrine h4 {
+.product-slide h4 {
   font-weight: 400;
   font-size: 12px;
   margin: 10px auto 3px;
@@ -73,9 +81,9 @@
 
 body {
   margin: 0;  
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.3;
   color: #333;
   background-color: #fff;
 }
@@ -84,6 +92,17 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  color: #333;
+}
+
+h4.price {
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #CC0000;
 }
 
 .container-fluid {
