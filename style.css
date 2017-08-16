@@ -1,21 +1,20 @@
-.slider-content{      
-  height: 320px;
+.slider-content{        
   vertical-align: middle;
   background: white;
   border: 1px solid #c3c3c3;      
 }
 
 #slider-vitrine {
-  max-height: 320px;
+  min-height: 330px;
   overflow: hidden;
 }
 
 .slider-control {
-  height: 100%;
+  height: 80%;
   cursor: pointer;
   position: absolute;
   top: 0;
-  width: 10%;
+  width: 5%;
   z-index: 1;
 }
 
@@ -34,7 +33,7 @@
 .slider-control .slider-left-arrow {
   left: 0;
   height: 60%;
-  margin-top: -150%;
+  margin-top: -110%;
   opacity: 0.3;
   position: absolute;
   top: 50%;
@@ -43,7 +42,7 @@
 .slider-control .slider-right-arrow {
   right: 0;
   height: 60%;
-  margin-top: -150%;
+  margin-top: -110%;
   opacity: 0.3;
   position: absolute;
   top: 50%;
@@ -54,7 +53,7 @@
 }
 
 .product-slide {
-  height: 320px;  
+  height: 330px;  
   padding: 15px;
   z-index: 2;
 }
@@ -70,7 +69,7 @@
 .slider-set {
   position: relative;
   overflow: hidden;  
-  height: 320px;   
+  height: 330px;   
 }
 
 .product-slide h4 {
@@ -95,6 +94,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: #333;
 }
 
